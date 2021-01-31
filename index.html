@@ -1,87 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Social Media Dashboard Theme Dark Light</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Google fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href=".//assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Header -->
+  <link rel="stylesheet" href="./assets/css/header/header.css">
+  <link rel="stylesheet" href="./assets/css/header/followers.css">
+  <link rel="stylesheet" href="./assets/css/header/theme.css">
+  <link rel="stylesheet" href="./assets/css/header/infos-gerais.css">
+
+  <!-- Main -->
+  <link rel="stylesheet" href="./assets/css/main/main.css">
+  <link rel="stylesheet" href="./assets/css/main/overview.css">
+  <link rel="stylesheet" href="./assets/css/main/cards.css">
+
+  <!-- Footer -->
+  <link rel="stylesheet" href="./assets/css/footer/footer.css">
+
 </head>
+
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <header>
 
-  Dark Mode
+    <div class="container">
+      
+      <section class="followers">
+        <h1 class="followers__title">
+          Social Media Dashboard
+        </h1>
+        <h2 class="followers__total">
+          Total Followers: 23,004
+        </h2>
+      </section>
+      
+      <section class="theme">
+        <label for="theme" class="theme__title">Dark Mode</label>
+        <label>
+          <input type="checkbox" id="theme">
+          <span></span>
+        </label>
+      </section>
 
-  
+      <section class="infos-gerais">
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        <div class="infos-gerais__card infos-gerais__card--facebook">
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+          <h5 class="infos-gerais__user">
+            <i class="infos-gerais__icon infos-gerais__icon--facebook"></i>
+            @nathanf
+          </h5>
+          
+          <h3 class="infos-gerais__total-followers">1987</h3>
+          <h4 class="infos-gerais__followers">Followers</h4>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+          <p class="infos-gerais__new-followers infos-gerais__new-followers--up">
+            <i class="infos-gerais__icon-up"></i>
+            12 Today
+          </p>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        </div>
+        
+        <div class="infos-gerais__card infos-gerais__card--twitter">
 
+          <h5 class="infos-gerais__user">
+            <i class="infos-gerais__icon infos-gerais__icon--twitter"></i>
+            @nathanf
+          </h5>
+          
+          <h3 class="infos-gerais__total-followers">1044</h3>
+          <h4 class="infos-gerais__followers">Followers</h4>
 
+          <p class="infos-gerais__new-followers infos-gerais__new-followers--up">
+            <i class="infos-gerais__icon-up"></i>
+            99 Today
+          </p>
 
-  Overview - Today
+        </div>
+        
+        <div class="infos-gerais__card infos-gerais__card--instagram">
 
-  Page Views
-  87
-  3%
+          <h5 class="infos-gerais__user">
+            <i class="infos-gerais__icon infos-gerais__icon--instagram"></i>
+            @realnathanf
+          </h5>
+          
+          <h3 class="infos-gerais__total-followers">11k</h3>
+          <h4 class="infos-gerais__followers">Followers</h4>
 
-  Likes
-  52
-  2%
+          <p class="infos-gerais__new-followers infos-gerais__new-followers--up">
+            <i class="infos-gerais__icon-up"></i>
+            1099 Today
+          </p>
 
-  Likes
-  5462
-  2257%
+        </div>
+        
+        <div class="infos-gerais__card infos-gerais__card--youtube">
 
-  Profile Views
-  52k
-  1375%
+          <h5 class="infos-gerais__user">
+            <i class="infos-gerais__icon infos-gerais__icon--youtube"></i>
+            Nathan F.
+          </h5>
+          
+          <h3 class="infos-gerais__total-followers">8239</h3>
+          <h4 class="infos-gerais__followers">Subscribers</h4>
 
-  Retweets
-  117
-  303%
+          <p class="infos-gerais__new-followers infos-gerais__new-followers--down">
+            <i class="infos-gerais__icon-down"></i>
+            144 Today
+          </p>
 
-  Likes
-  507
-  553%
+        </div>
 
-  Likes
-  107
-  19%
+      </section>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <section class="overview">
+
+        <h2 class="overview__title">Overview - Today</h2>
+        
+        <section class="cards">
+
+          <section class="card">
+          
+            <h3 class="card__title card__title--facebook">Page Views</h3>
+          
+            <p class="card__new-views">
+              87
+              <span class="card__status card__status--up">3%</span>
+            </p>
+          
+          </section>
+          
+          <section class="card">
+          
+            <h3 class="card__title card__title--facebook">Likes</h3>
+          
+            <p class="card__new-views">
+              52
+              <span class="card__status card__status--down">2%</span>
+            </p>
+          
+          </section>
+          
+          <section class="card">
+          
+            <h3 class="card__title card__title--instagram">Likes</h3>
+          
+            <p class="card__new-views">
+              5462
+              <span class="card__status card__status--up">2257%</span>
+            </p>
+          
+          </section>
+          
+          <section class="card">
+          
+            <h3 class="card__title card__title--instagram">Profile Views</h3>
+          
+            <p class="card__new-views">
+              52k
+              <span class="card__status card__status--up">1375%</span>
+            </p>
+          
+          </section>
+          
+          <section class="card">
+          
+            <h3 class="card__title card__title--twitter">Retweets</h3>
+          
+            <p class="card__new-views">
+              117
+              <span class="card__status card__status--up">303%</span>
+            </p>
+          
+          </section>
+          
+          <section class="card">
+          
+            <h3 class="card__title card__title--twitter">Likes</h3>
+          
+            <p class="card__new-views">
+              507
+              <span class="card__status card__status--up">553%</span>
+            </p>
+          
+          </section>
+          
+          <section class="card">
+          
+            <h3 class="card__title card__title--youtube">Likes</h3>
+          
+            <p class="card__new-views">
+              117
+              <span class="card__status card__status--down">19%</span>
+            </p>
+          
+          </section>
+          
+          <section class="card">
+          
+            <h3 class="card__title card__title--youtube">Total Views</h3>
+          
+            <p class="card__new-views">
+              1407
+              <span class="card__status card__status--down">12%</span>
+            </p>
+          
+          </section>
+
+        </section>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/bernardooficial" target="_blank">BernardoDev</a>.
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
