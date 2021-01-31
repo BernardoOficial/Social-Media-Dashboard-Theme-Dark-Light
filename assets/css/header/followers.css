@@ -1,0 +1,12 @@
+.followers__title {
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: var(--title-primary-light);
+    font-weight: 700;
+}
+.followers__total {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--title-light);
+    font-weight: 700;
+}

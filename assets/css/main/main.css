@@ -1,0 +1,23 @@
+main {
+    margin-top: 100px;
+    padding: 35px 150px;
+}
+main .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+@media screen and (max-width: 1300px) {
+    main {
+        position: relative;
+        margin-top: 370px;
+        padding: 35px 20px;
+    }    
+}
+@media screen and (max-width: 500px) {
+    main {
+        position: relative;
+        margin-top: 855px;
+        padding: 35px 20px;
+    }    
+}

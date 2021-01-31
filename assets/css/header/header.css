@@ -1,0 +1,36 @@
+header {
+    padding: 35px 155px;
+    height: 230px;
+    background-color: var(--bg-top-light);
+}
+header .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    
+    row-gap: 40px;
+    justify-items: stretch;
+}
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 35px 20px;
+        height: 230px;
+        background-color: var(--bg-top-light);
+    }    
+    header .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        }    
+}
+@media screen and (max-width: 420px) {
+    header {
+        height: 300px;
+    }   
+    header .container {
+        grid-template-columns: 1fr;
+    }    
+}

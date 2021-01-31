@@ -1,0 +1,44 @@
+:root {
+    --color-facebook: hsl(208, 92%, 53%);
+    --color-twitter: hsl(203, 89%, 53%);
+    --color-instagram: linear-gradient(90deg, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 80%);
+    --color-youtube:hsl(348, 97%, 39%);
+
+    --toggle-dark: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --toggle-light: hsl(230, 22%, 74%);
+
+    --bg-dark: hsl(230, 17%, 14%);
+    --bg-top-dark: hsl(232, 19%, 15%);
+    --bg-card-dark: hsl(228, 28%, 20%);
+    --title-primary-dark: hsl(0, 0%, 100%);
+    --title-dark: hsl(228, 34%, 66%);
+    --text-dark: hsl(0, 0%, 100%);
+
+    --bg-light: hsl(0, 0%, 100%);
+    --bg-top-light: hsl(225, 100%, 98%);
+    --bg-card-light: hsl(227, 47%, 96%);
+    --title-primary-light: hsl(230, 17%, 14%);
+    --title-light: hsl(228, 12%, 44%);
+    --text-light: hsl(230, 17%, 14%);
+
+    --arrow-up: hsl(163, 72%, 41%);
+    --arrow-down: hsl(356, 69%, 56%);
+
+    --ball-checkbox-light: #ffffff;
+    --input-checkbox-light: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    
+    --ball-checkbox-dark: #ffffff;
+    --input-checkbox-dark: hsl(230, 22%, 74%);
+
+}
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    font-size: 10px;
+    line-height: 10px;
+}
+body {
+    font-family: 'Inter', Poppins, Calibri, Arial, sans-serif;
+}

@@ -1,0 +1,63 @@
+.theme {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.theme__title {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--title-light);
+    font-weight: 700;
+    margin-right: 20px;
+}
+.theme label {
+    position: relative;
+    display: inline-block;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.theme label input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+
+    width: 70px;
+    height: 35px;
+    background: var(--input-checkbox-light);
+    position: relative;
+}
+.theme label span {
+    pointer-events: none;
+    cursor: pointer;
+
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    border-radius: 50%;
+    
+    background-color: var(--ball-checkbox-light);
+    width: 30px;
+    height: 30px;
+    
+    transition: 0.3s linear all;
+    transform: translateX(0px);
+    z-index: 10;
+}
+.theme label input:checked {
+    background: var(--input-checkbox-dark);
+}
+.theme label input:checked ~ span {
+    transition: 0.3s linear all;
+    transform: translateX(30px);
+}
+@media screen and (max-width: 450px) {
+    .theme {
+        width: 100%;
+    }
+}
