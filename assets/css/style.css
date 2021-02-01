@@ -7,20 +7,7 @@
     --toggle-dark: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     --toggle-light: hsl(230, 22%, 74%);
 
-    --bg-dark: hsl(230, 17%, 14%);
-    --bg-top-dark: hsl(232, 19%, 15%);
-    --bg-card-dark: hsl(228, 28%, 20%);
-    --title-primary-dark: hsl(0, 0%, 100%);
-    --title-dark: hsl(228, 34%, 66%);
-    --text-dark: hsl(0, 0%, 100%);
-
-    --bg-light: hsl(0, 0%, 100%);
-    --bg-top-light: hsl(225, 100%, 98%);
-    --bg-card-light: hsl(227, 47%, 96%);
-    --title-primary-light: hsl(230, 17%, 14%);
-    --title-light: hsl(228, 12%, 44%);
-    --text-light: hsl(230, 17%, 14%);
-
+    
     --arrow-up: hsl(163, 72%, 41%);
     --arrow-down: hsl(356, 69%, 56%);
 
@@ -30,6 +17,26 @@
     --ball-checkbox-dark: #ffffff;
     --input-checkbox-dark: hsl(230, 22%, 74%);
 
+    /* 
+        Tema Dark
+    --bg: hsl(230, 17%, 14%);
+    --bg-top: hsl(232, 19%, 15%);
+    --bg-card: hsl(228, 28%, 20%);
+    --title-primary: hsl(0, 0%, 100%);
+    --title: hsl(228, 34%, 66%);
+    --text: hsl(0, 0%, 100%);
+    --box-shadow: #00000077;
+    --border-color: #00000077;
+    */
+
+    --bg: hsl(0, 0%, 100%);
+    --bg-top: hsl(225, 100%, 98%);
+    --bg-card: hsl(227, 47%, 96%);
+    --title-primary: hsl(230, 17%, 14%);
+    --title: hsl(228, 12%, 44%);
+    --text: hsl(230, 17%, 14%);
+    --box-shadow: #cccccc;
+    --border-color: #cccccc;
 }
 * {
     box-sizing: border-box;
@@ -40,5 +47,6 @@ html {
     line-height: 10px;
 }
 body {
+    background-color: var(--bg);
     font-family: 'Inter', Poppins, Calibri, Arial, sans-serif;
 }

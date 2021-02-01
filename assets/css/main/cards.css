@@ -12,19 +12,19 @@
     max-height: 125px;
     padding: 25px;
     border-radius: 6px;
-    background-color: var(--bg-card-light);
+    background-color: var(--bg-card);
 }
 .card:hover {
     transition: 0.3s ease-in;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--border-color);
     transform: scale(1.01) translateY(-5px);
-    box-shadow: 0 5px 30px #cccccc;
+    box-shadow: 0 5px 30px var(--box-shadow);
 }
 .card__title {
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 700;
-    color: var(--title-light);
+    color: var(--title);
     position: relative;
 
     margin-bottom: 30px;
@@ -49,7 +49,7 @@
     font-size: 2.8rem;
     line-height: 3.6rem;
     font-weight: 700;
-    color: var(--text-light);
+    color: var(--text);
 }
 .card__status {
     font-size: 1.2rem;

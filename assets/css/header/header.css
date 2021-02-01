@@ -1,7 +1,7 @@
 header {
     padding: 35px 155px;
     height: 230px;
-    background-color: var(--bg-top-light);
+    background-color: var(--bg-top);
 }
 header .container {
     width: 100%;
@@ -19,7 +19,6 @@ header .container {
     header {
         padding: 35px 20px;
         height: 230px;
-        background-color: var(--bg-top-light);
     }    
     header .container {
         grid-template-columns: 1fr;

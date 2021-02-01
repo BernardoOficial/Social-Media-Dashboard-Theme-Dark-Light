@@ -15,16 +15,16 @@
     padding: 25px;
     border-radius: 6px;
     text-align: center;
-    background-color: var(--bg-card-light);
+    background-color: var(--bg-card);
 
     position: relative;
     overflow: hidden;
 }
 .infos-gerais__card:hover {
     transition: 0.3s ease-in;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--border-color);
     transform: scale(1.01) translateY(-5px);
-    box-shadow: 0 5px 30px #cccccc;
+    box-shadow: 0 5px 30px var(--box-shadow);
 }
 .infos-gerais__card::before {
     content: "";
@@ -45,7 +45,7 @@
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 700;
-    color: var(--title-light);
+    color: var(--title);
     margin-bottom: 20px;
     text-align: center;
     position: relative;
@@ -67,7 +67,7 @@
     font-size: 5rem;
     line-height: 6rem;
     font-weight: 700;
-    color: var(--text-light);
+    color: var(--text);
 }
 .infos-gerais__followers {
     font-size: 1.2rem;
@@ -75,7 +75,7 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: var(--title-light);
+    color: var(--title);
     margin-bottom: 20px;
 }
 .infos-gerais__new-followers {

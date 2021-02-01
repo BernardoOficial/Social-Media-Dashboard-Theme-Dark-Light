@@ -7,7 +7,7 @@
 .theme__title {
     font-size: 1.4rem;
     line-height: 2rem;
-    color: var(--title-light);
+    color: var(--title);
     font-weight: 700;
     margin-right: 20px;
 }
@@ -42,8 +42,8 @@
     border-radius: 50%;
     
     background-color: var(--ball-checkbox-light);
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     
     transition: 0.3s linear all;
     transform: translateX(0px);
@@ -54,7 +54,7 @@
 }
 .theme label input:checked ~ span {
     transition: 0.3s linear all;
-    transform: translateX(30px);
+    transform: translateX(35px);
 }
 @media screen and (max-width: 450px) {
     .theme {
